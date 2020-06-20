@@ -1,0 +1,110 @@
+/*
+tags "extended":
+a
+abbr - abbreviation (Example: WHO - wold health organisation)
+address - contact info
+article - text block, h and p tags inside.
+aside - sidebar / indirectly related content
+b
+blockquote - cite attr, quote
+button
+cite - title of creative work
+code - computer code
+datalist - predefined options for input
+del - deleted text
+details
+fieldset - related inputs in form
+figure, figcaption - title of image
+footer
+form
+h1-h6
+head
+hr - thematic break
+i
+img
+input (all supported types differently)
+ins - insert insted of del content
+kbd - keyboard input highlight
+label
+legend
+li
+main
+mark - highlight
+meter - percentage visualization
+nav
+ol
+optgroup
+option
+output - defines output for calculation (for attr)
+p
+picture - set different images for different media queryes
+source
+pre - preformatted, keeps whitespace, same font size
+process - show processing
+q
+s - no longer correct text
+samp - sample cli output
+section
+select
+small - smaller text :)
+strong - important text
+sub - bottom-index text
+summary
+template - not displayed content until js.
+textarea
+time - show time, datetime attribute
+var - variable name
+
+*/
+
+html,body,body *{
+	padding:0;
+	margin:0;
+}
+
+
+/*font size*/
+*{
+	font-size:1rem;
+}
+
+h1{
+	font-size:2.3rem;
+}
+h2{
+	font-size:2rem;	
+}
+h3{
+	font-size:1.4rem;	
+}
+
+/*phone only*/
+@media (max-width: 599px) {
+	body{
+		font-size:25px;
+	}
+}
+/*for-tablet-portrait-up*/
+@media (min-width: 600px) {
+	body{
+		font-size:20px;
+	}
+}
+
+/*for-tablet-landscape-up */
+@media (min-width: 900px) {
+	body{
+		font-size:20px;
+	}
+}
+/*for-desktop-up*/
+@media (min-width: 1200px) {
+	body{
+		font-size:16px;
+	}
+}
+
+/*for-big-desktop-up*/
+@media (min-width: 1800px) {
+	
+}
