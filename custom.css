@@ -1,3 +1,17 @@
+@media (max-width: 599px) {
+	main>section{
+		width:90vw;
+	}
+		
+}
+
+@media (min-width: 1200px) {
+	main>section{
+		width:70vw;
+	}
+	
+	
+}
 article{
 	padding-top:2.8rem;
 }

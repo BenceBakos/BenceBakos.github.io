@@ -5,8 +5,6 @@ a
 abbr - abbreviation (Example: WHO - wold health organisation)
 address - contact info
 b
-cite - title of creative work
-code - computer code
 del - deleted text
 i
 ins - insert insted of del content
@@ -122,11 +120,7 @@ h3{
 	body,html{
 		font-size:22px;
 	}
-	main>section{
-		margin-left:15vw;
-		margin-right:15vw;
-		width:70vw;
-	}
+	
 	
 }
 
@@ -137,9 +131,25 @@ h3{
 	}
 }
 
+main{
+	margin-top:2rem;
+}
+main,section{
+	display:flex;
+	flex-direction: column;
+    align-items: center;
+}
+main>*,section>*{
+	width:100%;
+}
+
 
 a{
 	color:#07a;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
 }
 
 p{
@@ -170,9 +180,6 @@ p>code{
 	margin:0;
 }
 
-main{
-	margin-top:2rem;
-}
 
 body>header{
 	background-color:white;
@@ -199,4 +206,17 @@ img{
 
 figcaption{
 	font-style: italic;
+}
+
+footer{
+	min-height:2rem;
+	text-align:center;
+}
+
+cite{
+	font-weight:bold;
+}
+
+mark{
+	background-color: #ffff00c9;
 }
