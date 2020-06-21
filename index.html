@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="base.css">
+		<link rel="stylesheet" href="custom.css">
+	</head>
+	<body>
+		<header>
+			<a href="#intro">Intro</a>
+			<a href="#jquery">Jquery</a>
+			<a href="#classes">Classes</a>
+			<a href="#solution">Solution</a>
+		</header>
+		<main>
+			<section>
+				<article id="intro">
+					<h1> Why html default style is ugly? </h1>
+					<p>
+						Who knows, maybe performance, maybe history, but i knows one thing for sure,
+						using <code>class="alert alert-primary"</code> can't be the solution.
+						Why am i using a ton of <strong>classes</strong> and <strong>ids</strong> to style
+						simple components?
+					</p>
+					<p>
+						Lot's of questions around web developement these days, but answers started rising on the horizon.
+					</p>
+					<p>
+						My goal is to show my solution to many many problems. First, i'll point out some of these problems, 
+						than i'll give you a possible solution 
+						(at <kbd>ctrl+shift+i</kbd> > Elements > Head > 
+							<code>&lt;link rel="stylesheet" href="base.css"&gt;</code>, and this whole document is just a tech demo 
+							about how powerfull can it be).
+					</p>
+				</article>
+				<article id="jquery">
+					<h2>No more jquery?</h2>
+					<p>
+						The new version of bootstrap 
+						<a href="https://mdbootstrap.com/docs/standard/bootstrap-5/">stops using jquery</a>
+						and this is the good direction. Jquery is unneccessary and we 
+						<a href="https://hashnode.com/post/why-do-many-web-developers-hate-jquery-ciibz8fp801g9j3xtgx19utpe">
+							really don't need it.</a>
+					</p>
+				</article>
+				<article id="classes">
+					<h2>Classes classes classes...</h2>
+					<p>
+						In theory we have <strong>components</strong> for the most usecases,
+						and <code>div</code>, <code>span</code> for special cases. In real life we have <code>divs</code>,
+						<code>spans</code>, and <code>classes</code>,
+						and sometimes <code>sections</code>, <code>heads</code>.
+					</p>
+					<p>
+						These days we have many many 
+						<a href="https://www.w3schools.com/html/html5_semantic_elements.asp">
+							tags with semantic meaning</a>,
+						but special behavior is missing.
+						The layout spice still missing from these components, and this is the reason we use
+					</p>
+					<code>
+						&lt;div class="col-4"&gt;
+					</code>
+					<h2> Div forest </h2>
+					<p>
+						My other pain is the <strong>huge markup</strong> for every single component.
+						when you see 10 divs, and the result is a simple layout with a coumple of components.
+					</p>
+				</article>
+				<article id="solution">
+					<h2>Solution?</h3>
+					<p>
+						In my opinion <strong>Bootstrap</strong> can't be it. 
+						More like an <i>"extension"</i> for the default style.
+						Like <code>base.css</code>, this is actually an experiment about it.
+						A couple hundered lines of css addition to the default beaviors, based on 
+						tagnames and relations between them.
+					</p>
+					<p>
+						You can see, i'm that 
+						<a href="">
+							motherfucker</a> person, but this is the way to make fast, simple, and not ugly websites.
+					</p>
+					<p>
+						You should use <code>classes</code> but frameworks should not.
+						You have to build your layout with <strong>Grid</strong>/<strong>Flexbox</strong>, 
+						but browsers should give you some default options,
+						only with html tags for simpler designs.
+					</p>
+				</article>
+				
+			</section>
+			
+			<section id="hero">
+				<figure>
+					<img src="selective-focus-photography-of-person-touch-the-white-704813.jpg" alt="Coffee">
+					<figcaption>
+						Photo about coffee, I know you like it :)
+						by Kristina Paukshtite from Pexels</figcaption>
+				</figure>
+			</section>
+		</main>
+	</body>
+</html>

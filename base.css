@@ -1,78 +1,95 @@
 /*
-tags "extended":
+
+///Inline
 a
 abbr - abbreviation (Example: WHO - wold health organisation)
 address - contact info
-article - text block, h and p tags inside.
-aside - sidebar / indirectly related content
 b
-blockquote - cite attr, quote
-button
 cite - title of creative work
 code - computer code
-datalist - predefined options for input
 del - deleted text
-details
-fieldset - related inputs in form
-figure, figcaption - title of image
-footer
-form
-h1-h6
-head
-hr - thematic break
 i
-img
-input (all supported types differently)
 ins - insert insted of del content
 kbd - keyboard input highlight
-label
-legend
-li
-main
 mark - highlight
-meter - percentage visualization
-nav
-ol
-optgroup
-option
-output - defines output for calculation (for attr)
-p
-picture - set different images for different media queryes
-source
-pre - preformatted, keeps whitespace, same font size
-process - show processing
 q
 s - no longer correct text
 samp - sample cli output
-section
-select
 small - smaller text :)
 strong - important text
 sub - bottom-index text
-summary
-template - not displayed content until js.
-textarea
-time - show time, datetime attribute
 var - variable name
+
+
+///Container
+article - text block, h and p tags inside.
+aside - sidebar / indirectly related content
+blockquote - cite attr, quote
+details
+summary
+figure, figcaption - title of image
+footer
+h1-h6
+header
+main
+nav
+p
+pre - preformatted, keeps whitespace, same font size
+section
+template - not displayed content until js.
+
+
+///Form-related
+button
+datalist - predefined options for input
+fieldset - related inputs in form
+form
+input (all supported types differently)
+legend
+label
+optgroup
+option
+output - defines output for calculation (for attr)
+select
+textarea
+
+
+///Content
+hr - thematic break
+img
+li
+ol
+ul
+meter - percentage visualization
+picture - set different images for different media queryes
+process - show processing
+time - show time, datetime attribute
+
+
 
 */
 
-html,body,body *{
-	padding:0;
-	margin:0;
+:root {
+  --default-color: #323232;
 }
 
 
-/*font size*/
+html,body, body *{
+	padding:0;
+	margin:0;
+	color:var(--default-color);
+	overflow-x:hidden;
+}
+
 *{
-	font-size:1rem;
+	font-size:0.8rem;
 }
 
 h1{
-	font-size:2.3rem;
+	font-size:1.8rem;
 }
 h2{
-	font-size:2rem;	
+	font-size:1.6rem;	
 }
 h3{
 	font-size:1.4rem;	
@@ -80,31 +97,106 @@ h3{
 
 /*phone only*/
 @media (max-width: 599px) {
-	body{
+	body,html{
 		font-size:25px;
 	}
+	
+	
+	
 }
 /*for-tablet-portrait-up*/
 @media (min-width: 600px) {
-	body{
-		font-size:20px;
+	body,html{
+		font-size:25px;
 	}
 }
 
 /*for-tablet-landscape-up */
 @media (min-width: 900px) {
-	body{
-		font-size:20px;
+	body,html{
+		font-size:22px;
 	}
 }
 /*for-desktop-up*/
 @media (min-width: 1200px) {
-	body{
-		font-size:16px;
+	body,html{
+		font-size:22px;
 	}
+	main>section{
+		margin-left:15vw;
+		margin-right:15vw;
+		width:70vw;
+	}
+	
 }
 
 /*for-big-desktop-up*/
 @media (min-width: 1800px) {
+	body{
+		font-size:22px;
+	}
+}
+
+
+a{
+	color:#07a;
+}
+
+p{
+	text-align: justify;
+	line-height: 1.3rem;
+}
+
+h1,h2,h3{
+	padding-bottom:0.5rem;
+}
+
+article{
+	padding:0.4rem;
+}
+
+code{
+	display:block;
+	border-left:7px solid #b3b3b3;
+	background-color: rgb(230, 230, 230);
+	padding:0.3rem;
+	margin-top:2rem;
+	margin-bottom:2rem;
+}
+p>code{
+	display:inline;
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+main{
+	margin-top:2rem;
+}
+
+body>header{
+	background-color:white;
+	position:fixed;
+	top:0;
+	width:100vw;
+	text-align:center;
 	
+	webkit-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.25);
+}
+body>header>a{
+	display:inline-block;
+	padding:0.8rem;
+	color:var(--default-color);
+	text-decoration:none;
+}
+
+
+img{
+	max-width:100vw;
+}
+
+figcaption{
+	font-style: italic;
 }
